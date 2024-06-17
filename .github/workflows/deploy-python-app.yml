@@ -1,9 +1,11 @@
 name: Deploy Python app to server
 
 on:
-    push:
-        branches:
-            - main
+  push:
+    paths:
+      - "flask/**"
+    branches:
+      - main
 
 jobs:
   deploy:
