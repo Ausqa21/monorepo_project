@@ -1,6 +1,9 @@
 name: Build and test python app
 
-on: [push]
+on:
+  push:
+    paths:
+      - "flask/**"
 
 jobs:
   build:
